@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
 
   <title>Nataliia Kotok — AI Visibility Specialist</title>
 
@@ -10,6 +14,42 @@
     name="description"
     content="Nataliia Kotok is Co-Founder and AI Visibility Specialist at KAN, helping local service businesses become more visible and more likely to be recommended in answers from ChatGPT, Gemini, Perplexity and Google AI."
   >
+
+  <!-- Structured data for the Nataliia Kotok entity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nataliia Kotok",
+    "alternateName": "Natalia Kotok",
+    "url": "https://nataliiakotok.github.io/",
+    "image": "https://nataliiakotok.github.io/nataliia-kotok.jpg",
+    "jobTitle": "Co-Founder & AI Visibility Specialist",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "KAN",
+      "url": "https://kan-agency.com/"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/nataliia-kotok/",
+      "https://gravatar.com/magnificentbelieverf2d4a4fa8a",
+      "https://www.crunchbase.com/person/nataliia-kotok",
+      "https://speakerhub.com/speaker/nataliia-kotok",
+      "https://sessionize.com/nataliia-kotok",
+      "https://medium.com/@kotok.nataliia",
+      "https://substack.com/@nataliiakotok",
+      "https://x.com/nataliia_kotok"
+    ],
+    "knowsAbout": [
+      "AI Visibility",
+      "AI Search",
+      "Generative Engine Optimization",
+      "Local Business Marketing",
+      "Entity Building",
+      "AI Visibility Measurement"
+    ]
+  }
+  </script>
 
   <style>
     * {
@@ -25,9 +65,18 @@
       min-height: 100vh;
       font-family: Inter, Arial, Helvetica, sans-serif;
       color: #171717;
+
       background:
-        radial-gradient(circle at top left, rgba(112, 62, 255, 0.14), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(156, 115, 255, 0.12), transparent 30%),
+        radial-gradient(
+          circle at top left,
+          rgba(112, 62, 255, 0.14),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at bottom right,
+          rgba(156, 115, 255, 0.12),
+          transparent 30%
+        ),
         #faf9ff;
     }
 
@@ -44,6 +93,8 @@
       box-shadow: 0 28px 80px rgba(69, 43, 140, 0.10);
       overflow: hidden;
     }
+
+    /* HERO */
 
     .hero {
       display: grid;
@@ -68,6 +119,7 @@
       border-radius: 50%;
       border: 8px solid #ffffff;
       background: #f4f1ff;
+
       box-shadow:
         0 20px 55px rgba(65, 35, 140, 0.18),
         0 0 0 1px #e8e2f8;
@@ -116,6 +168,8 @@
       font-weight: 750;
     }
 
+    /* MAIN LINKS */
+
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -132,7 +186,10 @@
       text-decoration: none;
       font-size: 14px;
       font-weight: 750;
-      transition: transform 0.2s ease, opacity 0.2s ease;
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     }
 
     .links a:hover {
@@ -150,6 +207,8 @@
       color: #5727cb;
     }
 
+    /* CONTENT */
+
     .content {
       padding: 0 64px 60px;
     }
@@ -157,6 +216,10 @@
     .section {
       padding-top: 36px;
       border-top: 1px solid #ece9f1;
+    }
+
+    .section + .section {
+      margin-top: 38px;
     }
 
     .section-title {
@@ -167,6 +230,8 @@
       letter-spacing: 0.11em;
       text-transform: uppercase;
     }
+
+    /* EXPERTISE */
 
     .tags {
       display: flex;
@@ -183,11 +248,131 @@
       font-weight: 700;
     }
 
+    /* PROFILES */
+
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .profile-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 82px;
+      padding: 16px 17px;
+
+      border: 1px solid #ebe7f4;
+      border-radius: 16px;
+      background: #ffffff;
+
+      color: #252229;
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .profile-link:hover {
+      transform: translateY(-2px);
+      border-color: #d8cdf8;
+      box-shadow: 0 10px 26px rgba(70, 44, 135, 0.08);
+    }
+
+    .profile-name {
+      font-size: 15px;
+      font-weight: 750;
+    }
+
+    .profile-type {
+      margin-top: 5px;
+      color: #98929f;
+      font-size: 12px;
+    }
+
+    /* WRITING */
+
+    .writing-card {
+      display: block;
+      padding: 28px;
+
+      border: 1px solid #e8e1fb;
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #faf8ff 0%,
+          #ffffff 65%
+        );
+
+      text-decoration: none;
+      color: inherit;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .writing-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(72, 45, 140, 0.09);
+    }
+
+    .writing-platform {
+      color: #6a35df;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .writing-title {
+      margin-top: 10px;
+      max-width: 760px;
+
+      font-size: 25px;
+      line-height: 1.25;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+    }
+
+    .writing-description {
+      margin-top: 12px;
+      max-width: 800px;
+
+      color: #66616c;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .writing-cta {
+      display: inline-block;
+      margin-top: 18px;
+
+      color: #5727cb;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
     footer {
       margin-top: 42px;
       color: #aaa5b2;
       font-size: 13px;
     }
+
+    /* TABLET */
+
+    @media (max-width: 980px) {
+      .profiles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* MOBILE */
 
     @media (max-width: 850px) {
       .page {
@@ -221,13 +406,30 @@
         padding: 0 28px 38px;
       }
     }
+
+    @media (max-width: 560px) {
+      .profiles-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .writing-card {
+        padding: 22px;
+      }
+
+      .writing-title {
+        font-size: 21px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <div class="page">
 
     <main class="card">
+
+      <!-- HERO -->
 
       <section class="hero">
 
@@ -240,9 +442,14 @@
         </div>
 
         <div>
-          <div class="eyebrow">AI Visibility · KAN</div>
 
-          <h1>Nataliia Kotok</h1>
+          <div class="eyebrow">
+            AI Visibility · KAN
+          </div>
+
+          <h1>
+            Nataliia Kotok
+          </h1>
 
           <div class="role">
             Co-Founder &amp; AI Visibility Specialist at KAN
@@ -264,9 +471,10 @@
           </div>
 
           <div class="links">
+
             <a
               class="primary"
-              href="https://kan-agency.com/"
+              href="https://kan-agency.com/en/"
               target="_blank"
               rel="noopener"
             >
@@ -284,39 +492,237 @@
 
             <a
               class="secondary"
-              href="https://sessionize.com/nataliia-kotok"
+              href="https://medium.com/@kotok.nataliia"
               target="_blank"
               rel="noopener"
             >
-              Sessionize
+              Medium
             </a>
 
             <a
               class="secondary"
-              href="https://speakerhub.com/speaker/nataliia-kotok"
+              href="https://x.com/nataliia_kotok"
               target="_blank"
               rel="noopener"
             >
-              SpeakerHub
+              X
             </a>
+
           </div>
+
         </div>
 
       </section>
 
       <div class="content">
 
+        <!-- EXPERTISE -->
+
         <section class="section">
-          <h2 class="section-title">Areas of Expertise</h2>
+
+          <h2 class="section-title">
+            Areas of Expertise
+          </h2>
 
           <div class="tags">
-            <div class="tag">AI Visibility</div>
-            <div class="tag">Generative Engine Optimization</div>
-            <div class="tag">AI Search</div>
-            <div class="tag">Local Business Marketing</div>
-            <div class="tag">Entity Building</div>
-            <div class="tag">AI Visibility Measurement</div>
+
+            <div class="tag">
+              AI Visibility
+            </div>
+
+            <div class="tag">
+              Generative Engine Optimization
+            </div>
+
+            <div class="tag">
+              AI Search
+            </div>
+
+            <div class="tag">
+              Local Business Marketing
+            </div>
+
+            <div class="tag">
+              Entity Building
+            </div>
+
+            <div class="tag">
+              AI Visibility Measurement
+            </div>
+
           </div>
+
+        </section>
+
+        <!-- OFFICIAL PROFILES -->
+
+        <section class="section">
+
+          <h2 class="section-title">
+            Official Profiles
+          </h2>
+
+          <div class="profiles-grid">
+
+            <a
+              class="profile-link"
+              href="https://www.linkedin.com/in/nataliia-kotok/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                LinkedIn
+              </span>
+
+              <span class="profile-type">
+                Professional profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://gravatar.com/magnificentbelieverf2d4a4fa8a"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                Gravatar
+              </span>
+
+              <span class="profile-type">
+                Identity profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://www.crunchbase.com/person/nataliia-kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                Crunchbase
+              </span>
+
+              <span class="profile-type">
+                Business profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://speakerhub.com/speaker/nataliia-kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                SpeakerHub
+              </span>
+
+              <span class="profile-type">
+                Speaker profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://sessionize.com/nataliia-kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                Sessionize
+              </span>
+
+              <span class="profile-type">
+                Speaker profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://medium.com/@kotok.nataliia"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                Medium
+              </span>
+
+              <span class="profile-type">
+                Articles on AI visibility
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://substack.com/@nataliiakotok"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                Substack
+              </span>
+
+              <span class="profile-type">
+                Expert profile
+              </span>
+            </a>
+
+            <a
+              class="profile-link"
+              href="https://x.com/nataliia_kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="profile-name">
+                X
+              </span>
+
+              <span class="profile-type">
+                Professional profile
+              </span>
+            </a>
+
+          </div>
+
+        </section>
+
+        <!-- LATEST WRITING -->
+
+        <section class="section">
+
+          <h2 class="section-title">
+            Latest Writing
+          </h2>
+
+          <a
+            class="writing-card"
+            href="https://medium.com/@kotok.nataliia/a-good-website-is-not-the-same-thing-as-an-ai-visible-company-d9731680d764"
+            target="_blank"
+            rel="noopener"
+          >
+
+            <div class="writing-platform">
+              Medium
+            </div>
+
+            <div class="writing-title">
+              A Good Website Is Not the Same Thing as an AI-Visible Company
+            </div>
+
+            <div class="writing-description">
+              Why strong SEO, good design and Google visibility do not
+              automatically mean that ChatGPT, Gemini or Perplexity
+              will recommend your business.
+            </div>
+
+            <span class="writing-cta">
+              Read article →
+            </span>
+
+          </a>
+
         </section>
 
         <footer>
@@ -328,5 +734,6 @@
     </main>
 
   </div>
+
 </body>
 </html>
