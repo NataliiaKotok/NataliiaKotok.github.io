@@ -47,10 +47,30 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
+      grid-template-columns: 300px minmax(0, 1fr);
       gap: 60px;
       align-items: center;
       padding: 64px 64px 48px;
+    }
+
+    .photo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      border: 8px solid #ffffff;
+      background: #f4f1ff;
+      box-shadow:
+        0 20px 55px rgba(65, 35, 140, 0.18),
+        0 0 0 1px #e8e2f8;
     }
 
     .eyebrow {
@@ -94,26 +114,6 @@
     .highlight {
       color: #6330e6;
       font-weight: 750;
-    }
-
-    .photo-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .profile-photo {
-      display: block;
-      width: 280px;
-      height: 280px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 50%;
-      border: 8px solid #ffffff;
-      background: #f4f1ff;
-      box-shadow:
-        0 20px 55px rgba(65, 35, 140, 0.18),
-        0 0 0 1px #e8e2f8;
     }
 
     .links {
@@ -201,7 +201,6 @@
       }
 
       .photo-wrap {
-        grid-row: 1;
         justify-content: flex-start;
       }
 
@@ -227,9 +226,18 @@
 
 <body>
   <div class="page">
+
     <main class="card">
 
       <section class="hero">
+
+        <div class="photo-wrap">
+          <img
+            src="./nataliia-kotok.jpg"
+            alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN"
+            class="profile-photo"
+          >
+        </div>
 
         <div>
           <div class="eyebrow">AI Visibility · KAN</div>
@@ -294,14 +302,6 @@
           </div>
         </div>
 
-        <div class="photo-wrap">
-          <img
-            src="./nataliia-kotok.jpg"
-            alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN"
-            class="profile-photo"
-          >
-        </div>
-
       </section>
 
       <div class="content">
@@ -326,6 +326,7 @@
       </div>
 
     </main>
+
   </div>
 </body>
 </html>
