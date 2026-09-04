@@ -38,7 +38,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.94);
+      background: rgba(255, 255, 255, 0.95);
       border: 1px solid #e8e3f7;
       border-radius: 32px;
       box-shadow: 0 28px 80px rgba(69, 43, 140, 0.10);
@@ -47,7 +47,7 @@
 
     .hero {
       display: grid;
-      grid-template-columns: 1fr 300px;
+      grid-template-columns: minmax(0, 1fr) 300px;
       gap: 60px;
       align-items: center;
       padding: 64px 64px 48px;
@@ -103,12 +103,14 @@
     }
 
     .profile-photo {
+      display: block;
       width: 280px;
       height: 280px;
       object-fit: cover;
       object-position: center;
       border-radius: 50%;
       border: 8px solid #ffffff;
+      background: #f4f1ff;
       box-shadow:
         0 20px 55px rgba(65, 35, 140, 0.18),
         0 0 0 1px #e8e2f8;
@@ -225,7 +227,6 @@
 
 <body>
   <div class="page">
-
     <main class="card">
 
       <section class="hero">
@@ -295,7 +296,7 @@
 
         <div class="photo-wrap">
           <img
-            src="nataliia-kotok.jpg"
+            src="./nataliia-kotok.jpg"
             alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN"
             class="profile-photo"
           >
@@ -325,7 +326,6 @@
       </div>
 
     </main>
-
   </div>
 </body>
 </html>
