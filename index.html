@@ -3,121 +3,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Nataliia Kotok — AI Visibility Specialist</title>
-  <meta name="description" content="Nataliia Kotok is Co-Founder and AI Visibility Specialist at KAN, helping local service businesses become more visible and more likely to be recommended in AI answers.">
+
+  <meta
+    name="description"
+    content="Nataliia Kotok is Co-Founder and AI Visibility Specialist at KAN, helping local service businesses become more visible and more likely to be recommended in answers from ChatGPT, Gemini, Perplexity and Google AI."
+  >
 
   <style>
     * {
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top left, rgba(111, 45, 255, 0.18), transparent 35%),
-        linear-gradient(135deg, #f8f7ff 0%, #ffffff 55%, #f5f2ff 100%);
-      color: #171717;
-      min-height: 100vh;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .wrap {
-      max-width: 1100px;
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: #171717;
+      background:
+        radial-gradient(circle at top left, rgba(112, 62, 255, 0.14), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(156, 115, 255, 0.12), transparent 30%),
+        #faf9ff;
+    }
+
+    .page {
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 70px 28px;
+      padding: 52px 24px;
     }
 
     .card {
-      background: rgba(255,255,255,0.9);
-      border: 1px solid rgba(90, 60, 180, 0.12);
-      border-radius: 28px;
-      box-shadow: 0 24px 70px rgba(55, 30, 120, 0.10);
-      padding: 56px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid #e8e3f7;
+      border-radius: 32px;
+      box-shadow: 0 28px 80px rgba(69, 43, 140, 0.10);
+      overflow: hidden;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 60px;
+      align-items: center;
+      padding: 64px 64px 48px;
     }
 
     .eyebrow {
-      display: inline-block;
+      margin-bottom: 20px;
+      color: #6d3df2;
       font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
+      font-weight: 800;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #6b35f2;
-      margin-bottom: 18px;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: 0.95;
-      letter-spacing: -0.04em;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 0.96;
+      letter-spacing: -0.05em;
     }
 
     .role {
-      margin-top: 22px;
+      margin-top: 24px;
       font-size: 24px;
-      font-weight: 600;
-      color: #3f3f46;
+      line-height: 1.35;
+      font-weight: 650;
+      color: #353535;
     }
 
     .location {
       margin-top: 10px;
+      color: #77727f;
       font-size: 16px;
-      color: #71717a;
     }
 
     .intro {
-      max-width: 800px;
+      max-width: 790px;
       margin-top: 34px;
       font-size: 20px;
-      line-height: 1.65;
-      color: #3f3f46;
+      line-height: 1.68;
+      color: #3d3a42;
     }
 
     .highlight {
-      color: #5b2bd8;
-      font-weight: 650;
+      color: #6330e6;
+      font-weight: 750;
+    }
+
+    .photo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-photo {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      border: 8px solid #ffffff;
+      box-shadow:
+        0 20px 55px rgba(65, 35, 140, 0.18),
+        0 0 0 1px #e8e2f8;
     }
 
     .links {
-      margin-top: 42px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      margin-top: 38px;
     }
 
     .links a {
-      text-decoration: none;
-      padding: 13px 18px;
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 19px;
       border-radius: 999px;
-      background: #111111;
-      color: white;
-      font-size: 15px;
-      font-weight: 600;
-      transition: transform .2s ease, opacity .2s ease;
-    }
-
-    .links a.secondary {
-      background: #ede8ff;
-      color: #5123c8;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 750;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
     .links a:hover {
       transform: translateY(-2px);
-      opacity: 0.9;
+      opacity: 0.88;
+    }
+
+    .primary {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .secondary {
+      background: #efeaff;
+      color: #5727cb;
+    }
+
+    .content {
+      padding: 0 64px 60px;
     }
 
     .section {
-      margin-top: 58px;
-      padding-top: 34px;
-      border-top: 1px solid #ececf2;
+      padding-top: 36px;
+      border-top: 1px solid #ece9f1;
     }
 
-    .section h2 {
+    .section-title {
       margin: 0 0 20px;
-      font-size: 15px;
-      letter-spacing: 0.10em;
+      color: #77727f;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.11em;
       text-transform: uppercase;
-      color: #71717a;
     }
 
     .tags {
@@ -129,26 +175,37 @@
     .tag {
       padding: 10px 14px;
       border-radius: 12px;
-      background: #f4f1ff;
-      color: #4d24b7;
-      font-weight: 600;
+      background: #f1edff;
+      color: #5124bc;
       font-size: 14px;
+      font-weight: 700;
     }
 
     footer {
-      margin-top: 26px;
+      margin-top: 42px;
+      color: #aaa5b2;
       font-size: 13px;
-      color: #9a9aa2;
     }
 
-    @media (max-width: 700px) {
-      .wrap {
-        padding: 28px 16px;
+    @media (max-width: 850px) {
+      .page {
+        padding: 24px 14px;
       }
 
-      .card {
-        padding: 32px 24px;
-        border-radius: 22px;
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 38px 28px 30px;
+        gap: 34px;
+      }
+
+      .photo-wrap {
+        grid-row: 1;
+        justify-content: flex-start;
+      }
+
+      .profile-photo {
+        width: 180px;
+        height: 180px;
       }
 
       .role {
@@ -158,57 +215,117 @@
       .intro {
         font-size: 17px;
       }
+
+      .content {
+        padding: 0 28px 38px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="page">
+
     <main class="card">
-      <div class="eyebrow">AI Visibility · KAN</div>
-      <img src="nataliia-kotok.jpg" alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN" class="profile-photo">
-<img src="nataliia-kotok.jpg" alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN" class="profile-photo">
-      <h1>Nataliia Kotok</h1>
 
-      <div class="role">
-        Co-Founder & AI Visibility Specialist at KAN
-      </div>
+      <section class="hero">
 
-      <div class="location">
-        Poznań, Poland
-      </div>
+        <div>
+          <div class="eyebrow">AI Visibility · KAN</div>
 
-      <div class="intro">
-        I help local service businesses become
-        <span class="highlight">more visible and more likely to be recommended</span>
-        in answers from ChatGPT, Gemini, Perplexity and Google AI.
-        My work combines AI visibility measurement, entity building, content,
-        external presence and reputation signals into one practical system.
-      </div>
+          <h1>Nataliia Kotok</h1>
 
-      <div class="links">
-        <a href="https://kan-agency.com/" target="_blank">KAN — AI Visibility Agency</a>
-        <a href="https://www.linkedin.com/in/nataliia-kotok/" target="_blank" class="secondary">LinkedIn</a>
-        <a href="https://sessionize.com/nataliia-kotok" target="_blank" class="secondary">Sessionize</a>
-      </div>
+          <div class="role">
+            Co-Founder &amp; AI Visibility Specialist at KAN
+          </div>
 
-      <section class="section">
-        <h2>Areas of expertise</h2>
+          <div class="location">
+            Poznań, Poland
+          </div>
 
-        <div class="tags">
-          <div class="tag">AI Visibility</div>
-          <div class="tag">Generative Engine Optimization</div>
-          <div class="tag">AI Search</div>
-          <div class="tag">Local Business Marketing</div>
-          <div class="tag">Entity Building</div>
-          <div class="tag">AI Visibility Measurement</div>
+          <div class="intro">
+            I help local service businesses become
+            <span class="highlight">
+              more visible and more likely to be recommended
+            </span>
+            in answers from ChatGPT, Gemini, Perplexity and Google AI.
+            My work combines AI visibility measurement, entity building,
+            content, external presence and reputation signals into one
+            practical system.
+          </div>
+
+          <div class="links">
+            <a
+              class="primary"
+              href="https://kan-agency.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              KAN — AI Visibility Agency
+            </a>
+
+            <a
+              class="secondary"
+              href="https://www.linkedin.com/in/nataliia-kotok/"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="secondary"
+              href="https://sessionize.com/nataliia-kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              Sessionize
+            </a>
+
+            <a
+              class="secondary"
+              href="https://speakerhub.com/speaker/nataliia-kotok"
+              target="_blank"
+              rel="noopener"
+            >
+              SpeakerHub
+            </a>
+          </div>
         </div>
+
+        <div class="photo-wrap">
+          <img
+            src="nataliia-kotok.jpg"
+            alt="Nataliia Kotok — Co-Founder and AI Visibility Specialist at KAN"
+            class="profile-photo"
+          >
+        </div>
+
       </section>
 
-      <footer>
-        Official profile of Nataliia Kotok
-      </footer>
+      <div class="content">
+
+        <section class="section">
+          <h2 class="section-title">Areas of Expertise</h2>
+
+          <div class="tags">
+            <div class="tag">AI Visibility</div>
+            <div class="tag">Generative Engine Optimization</div>
+            <div class="tag">AI Search</div>
+            <div class="tag">Local Business Marketing</div>
+            <div class="tag">Entity Building</div>
+            <div class="tag">AI Visibility Measurement</div>
+          </div>
+        </section>
+
+        <footer>
+          Official profile of Nataliia Kotok
+        </footer>
+
+      </div>
+
     </main>
+
   </div>
 </body>
 </html>
