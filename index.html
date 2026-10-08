@@ -19,34 +19,56 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Nataliia Kotok",
-    "alternateName": "Natalia Kotok",
-    "url": "https://nataliiakotok.github.io/",
-    "image": "https://nataliiakotok.github.io/nataliia-kotok.jpg",
-    "jobTitle": "Co-Founder & AI Visibility Specialist",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "KAN",
-      "url": "https://kan-agency.com/"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/nataliia-kotok/",
-      "https://gravatar.com/magnificentbelieverf2d4a4fa8a",
-      "https://www.crunchbase.com/person/nataliia-kotok",
-      "https://speakerhub.com/speaker/nataliia-kotok",
-      "https://sessionize.com/nataliia-kotok",
-      "https://medium.com/@kotok.nataliia",
-      "https://substack.com/@nataliiakotok",
-      "https://x.com/NataliiaKotok"
-    ],
-    "knowsAbout": [
-      "AI Visibility",
-      "AI Search",
-      "Generative Engine Optimization",
-      "Local Business Marketing",
-      "Entity Building",
-      "AI Visibility Measurement"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://nataliiakotok.github.io/#website",
+        "url": "https://nataliiakotok.github.io/",
+        "name": "Nataliia Kotok",
+        "inLanguage": "en",
+        "about": {
+          "@id": "https://nataliiakotok.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://nataliiakotok.github.io/#person",
+        "name": "Nataliia Kotok",
+        "alternateName": "Natalia Kotok",
+        "url": "https://nataliiakotok.github.io/",
+        "image": "https://nataliiakotok.github.io/nataliia-kotok.jpg",
+        "jobTitle": "Co-Founder & AI Visibility Specialist",
+        "worksFor": {
+          "@id": "https://kan-agency.com/#organization"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/nataliia-kotok/",
+          "https://gravatar.com/magnificentbelieverf2d4a4fa8a",
+          "https://www.crunchbase.com/person/nataliia-kotok",
+          "https://speakerhub.com/speaker/nataliia-kotok",
+          "https://sessionize.com/nataliia-kotok",
+          "https://medium.com/@kotok.nataliia",
+          "https://substack.com/@nataliiakotok",
+          "https://x.com/NataliiaKotok"
+        ],
+        "knowsAbout": [
+          "AI Visibility",
+          "AI Search",
+          "Generative Engine Optimization",
+          "Local Business Marketing",
+          "Entity Building",
+          "AI Visibility Measurement"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://kan-agency.com/#organization",
+        "name": "KAN",
+        "url": "https://kan-agency.com/",
+        "founder": {
+          "@id": "https://nataliiakotok.github.io/#person"
+        }
+      }
     ]
   }
   </script>
